@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Menu Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    <nav class="vertical">
+        <ul>
+            <li>
+                <a href="#" class="logo">
+                    <img src="/logo.jpg" alt="">
+                    <!-- <span class="nav-item">Menu Bar</span> -->
+                </a>
+            </li>
+            <li><a href="#" class="branch">
+                <i class="fas fa-code-branch"></i>
+                    <!-- <span class="nav-item">Branch</span> -->
+            </a></li>
+            <li><a href="#" class="bank">
+                <i class="fas fa-landmark"></i>
+                    <!-- <span class="nav-item">Bank</span> -->
+            </a></li>
+            <li><a href="#usersection" class="user">
+                <i class="fas fa-user"></i>
+                    <!-- <span class="nav-item">User</span> -->
+            </a></li>
+        </ul>
+    </nav>
+    <div call="contenet">
+<section id="usersection">
+    <nav class="horizontal">
+        <label class="access">Manage user access</label>
+            <i id="searchid" class="fa fa-search"></i>
+            <input type="text" id="vsearch" name="fname" placeholder="Search for an user">
+            <button class="column" onclick="openTab('b1');" id="newuser" type="button"> + Create new user </button>
+        
+    </nav>
+    <nav class="second">
+        <label class="status" for="status">Status</label>
+        <select class="font" name="cars" id="cars">
+          <option class="font" value="all">All</option>
+          <option class="font" value="Active">Active</option>
+          <option class="font" value="disabled">Disabled</option>
+        </select>
+
+
+        <label class="daterange" for="start">Date range:</label>
+        <input class="font" type="date" id="start" name="trip-start"
+        value="2018-07-22">
+        <label class="font" for="start">To:</label>
+        <input class="font" type="date" id="start" name="trip-start"
+        value="2018-07-22">
+
+    </nav>
+</section>
+<section style="margin-top: 150px; margin-left: 120px;" class="table">
+    <table>
+        <tr>
+            <th id="userid" class="border">UserId</th>
+            <th id="userid" class="border">First Name</th>
+            <th id="userid" class="border">Last Name</th>
+            <th id="userid" class="border">Contact Number</th>
+            <th id="userid" class="border">Email Id</th>
+            <th id="userid" class="border">Role</th>
+            <th id="userid" class="border">Status</th>
+            <th id="userid" class="border">Actions</th>
+        </tr>
+        <tr>
+            <td class="border">MO093676</td>
+            <td class="border">Maneesh</td>
+            <td class="border">Sagare</td>
+            <td class="border">9822287387</td>
+            <td class="border">maheshs@lentra.ai</td>
+            <td class="border">03/03/2020</td>
+            <td class="border">Admin</td>
+            <td class="border">Active</td>
+        </tr> 
+        
+        <tr>
+            <td class="border">MO093677</td>
+            <td class="border">Niraj</td>
+            <td class="border">Bapat</td>
+            <td class="border">9766119760</td>
+            <td class="border">nirajb@lentra.ai</td>
+            <td class="border">21/05/2020</td>
+            <td class="border">Maker</td>
+            <td class="border">Disabled</td>
+        </tr>
+
+        <tr>
+            <td class="border">MO093682</td>
+            <td class="border">Atul</td>
+            <td class="border">Kshirath</td>
+            <td class="border">8975389003</td>
+            <td class="border">atulkk@lentra.ai</td>
+            <td class="border">19/03/2020</td>
+            <td class="border">Checker</td>
+            <td class="border">Active</td>
+        </tr>
+        
+    </table>
+</section>
+
+</div>
+
+<div id="b1" class="containerTab" style="  display:none;background:rgb(89, 89, 170) " >
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <nav class="popup">
+        <label class="newuseruser">New user</label>
+        <div>
+            <label class="newuserrole" for="fname">First name</label>
+            <input class="userrole" type="text" placeholder="Enter First name"><br>
+            <label class="newuserrole" for="lname">Last name</label>
+            <input class="userrole" type="text" placeholder="Enter Last name"><br>
+            <label class="newuserrole" for="emailid">Email ID</label>
+            <input class="userrole"type="text" placeholder="Enter Email ID"><br>
+            <label class="newuserrole" for="mobilenumber">Mobile number</label>
+            <input class="userrole" type="tel" placeholder="Enter Mobile No."><br>
+            <label class="newuserrole" for="role">Role</label><br>
+            <select class="userrole" name="role" id="roles">
+                <option value="admin">Admin</option>
+                <option value="maker">Maker</option>
+                <option value="checker">Checker</option>
+                </select><br>
+                <h5 style="font-size: 15px; color: black">Toggle to anable/disable parameter across the system</h5><br>
+                <br>
+                <button class="sumbitbutton">Submit</button>
+            </div>
+    </nav>
+    <br>
+    
+  </div>
+
+  <script>
+    function openTab(tabName) {
+      var i, x;
+      x = document.getElementsByClassName("containerTab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+    </script>
+  
+</body>
+</html>
+

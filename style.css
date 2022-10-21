@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{    
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+}
+nav.vertical{
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: rgb(215, 237, 242);
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+
+}
+nav.horizontal{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 80px;
+    left: 0;
+    background: rgb(235, 237, 230);
+    width: 100%;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    margin-left: 90px;
+}
+nav.second{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    background: rgb(222, 223, 220);
+    width: 100%;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    margin-left: 90px;
+    margin-top: 80px;
+    padding-top: 20px;
+}
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+
+}
+a:hover{
+    background: #eee;
+}
+.branch{
+    position: absolute;
+    top: 200px;
+}
+.bank{
+    position: absolute;
+    top: 270px;
+}
+.user{
+    position: absolute;
+    top: 340px;
+}
+label.access{
+    margin: 40px 0 0 20px;
+    font-size: 25px;
+}
+button#newuser{
+    background-color: rgb(14, 14, 130);
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 3px;
+    margin: 0 0 0 600px ;
+    font-size: 20px;
+    
+}
+#vsearch{
+    border-radius: 10px;
+    margin: 16px 0 0 0;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+#searchid{
+    border-radius: 10px;
+    margin: 0 0 0 50px;
+    font-size: 25px;   
+}
+.status{
+    margin: 0 10px 0 15px;
+    font-size: 20px;
+}
+.daterange{
+    margin: 0 0 0 100px;
+    font-size: 20px;
+}
+.font{
+    font-size: 15px;
+}
+.border{
+    border-bottom: 1px solid black;
+    /* margin-right: 10px; */
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-right: 30px;
+    
+    text-align: center;
+    
+}
+#userid{
+    background-color: rgb(62, 35, 15);
+    color: #fff;
+}
+.containerTab {
+    color: white;
+    margin-left: 1150px;
+    margin-top: 257px;
+    margin-right: 0;
+    width: 40px;
+    height: 45px;
+    font-size: 30px;
+    padding: 1px;
+  }
+
+nav.popup{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 600px;
+    left: 0;
+    background: rgb(175, 194, 246);
+    width: 300px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    margin: 60px 0 0 1180px;
+    padding: 10px;
+
+}
+.newuseruser{
+    color: rgb(252, 252, 252);
+    font-size: 40px;
+}
+.userrole{
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.newuserrole{
+    font-size: 20px;
+    color: rgb(2, 2, 73);
+}
+.sumbitbutton{
+    margin-left: 150px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: red;
+    padding: 5px;
+}
